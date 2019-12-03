@@ -78,6 +78,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -90,6 +91,7 @@
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.getNewProfileToolStripMenuItem});
+            this.fileToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Window;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
@@ -97,7 +99,7 @@
             // getNewProfileToolStripMenuItem
             // 
             this.getNewProfileToolStripMenuItem.Name = "getNewProfileToolStripMenuItem";
-            this.getNewProfileToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.getNewProfileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.getNewProfileToolStripMenuItem.Text = "Get New Profile";
             // 
             // groupBox1
@@ -137,9 +139,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(7, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 13);
+            this.label1.Size = new System.Drawing.Size(115, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Summoner Name:";
+            this.label1.Text = "Summoner Information:";
             // 
             // summoner1name
             // 
@@ -178,9 +180,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(6, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 13);
+            this.label2.Size = new System.Drawing.Size(115, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Summoner Name:";
+            this.label2.Text = "Summoner Information:";
             // 
             // sum2champs
             // 
@@ -227,9 +229,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(6, 21);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 13);
+            this.label4.Size = new System.Drawing.Size(115, 13);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Summoner Name:";
+            this.label4.Text = "Summoner Information:";
             // 
             // sum4champs
             // 
@@ -276,9 +278,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(6, 21);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 13);
+            this.label3.Size = new System.Drawing.Size(115, 13);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Summoner Name:";
+            this.label3.Text = "Summoner Information:";
             // 
             // sum3champs
             // 
@@ -325,9 +327,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(6, 21);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 13);
+            this.label5.Size = new System.Drawing.Size(115, 13);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Summoner Name:";
+            this.label5.Text = "Summoner Information:";
             // 
             // sum5champs
             // 
@@ -352,7 +354,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(151, 23);
             this.button1.TabIndex = 6;
-            this.button1.Text = "Request Reccomendation";
+            this.button1.Text = "Request Advice";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -383,6 +385,7 @@
             // 
             // statusStrip1
             // 
+            this.statusStrip1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.StatusLabel,
             this.ProgressBar});
@@ -394,6 +397,7 @@
             // 
             // StatusLabel
             // 
+            this.StatusLabel.ForeColor = System.Drawing.SystemColors.Window;
             this.StatusLabel.Name = "StatusLabel";
             this.StatusLabel.Size = new System.Drawing.Size(171, 17);
             this.StatusLabel.Text = "Enter in your possible matchup";
@@ -414,6 +418,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(71, 72);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // richTextBox1
             // 
@@ -427,6 +432,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(834, 411);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.groupBox6);
@@ -436,11 +442,12 @@
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximumSize = new System.Drawing.Size(850, 511);
             this.MinimumSize = new System.Drawing.Size(850, 450);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Nabil\'s League Team Analysis Tool";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

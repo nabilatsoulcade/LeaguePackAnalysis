@@ -44,12 +44,27 @@ namespace RiotChampionProfiler
             var riotApi = RiotApi.NewInstance("RGAPI-05e979b0-de94-4bcf-b8bf-5e88bc7af374");
 
             //Get Summoner information
+            StatusLabel.Text = "Getting Summoner info from Riot API (1/5)";
             GetSummonerData(riotApi, summoner1name.Text, sum1champs);
-            GetSummonerData(riotApi, summoner2name.Text, sum2champs);
-            GetSummonerData(riotApi, summoner3name.Text, sum3champs);
-            GetSummonerData(riotApi, summoner4name.Text, sum4champs);
-            GetSummonerData(riotApi, summoner5name.Text, sum5champs);
+            ProgressBar.Value = 20;
 
+            StatusLabel.Text = "Getting Summoner info from Riot API (2/5)";
+            GetSummonerData(riotApi, summoner2name.Text, sum2champs);
+            ProgressBar.Value = 40;
+
+            StatusLabel.Text = "Getting Summoner info from Riot API (3/5)";
+            GetSummonerData(riotApi, summoner3name.Text, sum3champs);
+            ProgressBar.Value = 60;
+
+            StatusLabel.Text = "Getting Summoner info from Riot API (4/5)";
+            GetSummonerData(riotApi, summoner4name.Text, sum4champs);
+            ProgressBar.Value = 80;
+
+            StatusLabel.Text = "Getting Summoner info from Riot API (5/5)";
+            GetSummonerData(riotApi, summoner5name.Text, sum5champs);
+            ProgressBar.Value = 100;
+            ProgressBar.Value = 0;
+            StatusLabel.Text = "Fetch complete";
         }
 
         private void summoner1name_TextChanged(object sender, EventArgs e)
@@ -114,13 +129,18 @@ namespace RiotChampionProfiler
                     var mastery = masteries[i];
                     // Get champion for this mastery.
                     var champ = (Champion)mastery.ChampionId;
-                    summonerData.Items.Add(champ.Name() + " | " + mastery.ChampionPoints.ToString() + " | " + mastery.ChampionLevel.ToString());
+                    summonerData.Items.Add((i+1).ToString() + " | " + champ.Name() + " (" + mastery.ChampionPoints.ToString() + " | " + mastery.ChampionLevel.ToString() + ")");
                 }
             }
             else
             {
                 MessageBox.Show("The Summoner Name " + summonerName + "could not be found.");
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
