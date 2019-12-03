@@ -1,0 +1,13 @@
+C:\Users\Nabil Sekirime\source\repos\RiotChampionProfiler\obj\Debug\RiotChampionProfiler.csprojAssemblyReference.cache
+C:\Users\Nabil Sekirime\source\repos\RiotChampionProfiler\obj\Debug\RiotChampionProfiler.Form1.resources
+C:\Users\Nabil Sekirime\source\repos\RiotChampionProfiler\obj\Debug\RiotChampionProfiler.Properties.Resources.resources
+C:\Users\Nabil Sekirime\source\repos\RiotChampionProfiler\obj\Debug\RiotChampionProfiler.csproj.GenerateResource.cache
+C:\Users\Nabil Sekirime\source\repos\RiotChampionProfiler\bin\Debug\RiotChampionProfiler.exe.config
+C:\Users\Nabil Sekirime\source\repos\RiotChampionProfiler\bin\Debug\RiotChampionProfiler.exe
+C:\Users\Nabil Sekirime\source\repos\RiotChampionProfiler\bin\Debug\RiotChampionProfiler.pdb
+C:\Users\Nabil Sekirime\source\repos\RiotChampionProfiler\bin\Debug\Camille.dll
+C:\Users\Nabil Sekirime\source\repos\RiotChampionProfiler\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Nabil Sekirime\source\repos\RiotChampionProfiler\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Nabil Sekirime\source\repos\RiotChampionProfiler\obj\Debug\RiotChampionProfiler.csproj.CopyComplete
+C:\Users\Nabil Sekirime\source\repos\RiotChampionProfiler\obj\Debug\RiotChampionProfiler.exe
+C:\Users\Nabil Sekirime\source\repos\RiotChampionProfiler\obj\Debug\RiotChampionProfiler.pdb
