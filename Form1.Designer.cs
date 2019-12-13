@@ -60,11 +60,13 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.AdviceText = new System.Windows.Forms.RichTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.StatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.ProgressBar = new System.Windows.Forms.ToolStripProgressBar();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.riotApiKeyField = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -72,8 +74,8 @@
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -99,7 +101,7 @@
             // getNewProfileToolStripMenuItem
             // 
             this.getNewProfileToolStripMenuItem.Name = "getNewProfileToolStripMenuItem";
-            this.getNewProfileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.getNewProfileToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.getNewProfileToolStripMenuItem.Text = "Get New Profile";
             // 
             // groupBox1
@@ -111,7 +113,7 @@
             this.groupBox1.Controls.Add(this.summoner1name);
             this.groupBox1.Location = new System.Drawing.Point(12, 136);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(157, 241);
+            this.groupBox1.Size = new System.Drawing.Size(157, 259);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Summoner 1";
@@ -161,7 +163,7 @@
             this.groupBox2.Controls.Add(this.summoner2name);
             this.groupBox2.Location = new System.Drawing.Point(175, 136);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(157, 241);
+            this.groupBox2.Size = new System.Drawing.Size(157, 259);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Summoner 2";
@@ -210,7 +212,7 @@
             this.groupBox3.Controls.Add(this.summoner4name);
             this.groupBox3.Location = new System.Drawing.Point(501, 136);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(157, 241);
+            this.groupBox3.Size = new System.Drawing.Size(157, 259);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Summoner 4";
@@ -259,7 +261,7 @@
             this.groupBox4.Controls.Add(this.summoner3name);
             this.groupBox4.Location = new System.Drawing.Point(338, 136);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(157, 241);
+            this.groupBox4.Size = new System.Drawing.Size(157, 259);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Summoner 3";
@@ -308,7 +310,7 @@
             this.groupBox5.Controls.Add(this.summoner5name);
             this.groupBox5.Location = new System.Drawing.Point(664, 136);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(157, 241);
+            this.groupBox5.Size = new System.Drawing.Size(157, 259);
             this.groupBox5.TabIndex = 5;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Summoner 5";
@@ -371,7 +373,7 @@
             // 
             this.groupBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox6.Controls.Add(this.richTextBox1);
+            this.groupBox6.Controls.Add(this.AdviceText);
             this.groupBox6.Controls.Add(this.pictureBox1);
             this.groupBox6.Controls.Add(this.button1);
             this.groupBox6.Controls.Add(this.button2);
@@ -383,13 +385,35 @@
             this.groupBox6.Text = "League Matchup Analysis";
             this.groupBox6.Enter += new System.EventHandler(this.groupBox6_Enter);
             // 
+            // AdviceText
+            // 
+            this.AdviceText.Location = new System.Drawing.Point(88, 20);
+            this.AdviceText.Name = "AdviceText";
+            this.AdviceText.Size = new System.Drawing.Size(558, 72);
+            this.AdviceText.TabIndex = 9;
+            this.AdviceText.Text = "";
+            this.AdviceText.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(10, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(71, 72);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // statusStrip1
             // 
             this.statusStrip1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.StatusLabel,
             this.ProgressBar});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 389);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 407);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(834, 22);
             this.statusStrip1.TabIndex = 10;
@@ -407,33 +431,36 @@
             this.ProgressBar.Name = "ProgressBar";
             this.ProgressBar.Size = new System.Drawing.Size(100, 16);
             // 
-            // pictureBox1
+            // riotApiKeyField
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(10, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(71, 72);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.riotApiKeyField.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.riotApiKeyField.Location = new System.Drawing.Point(664, 407);
+            this.riotApiKeyField.Name = "riotApiKeyField";
+            this.riotApiKeyField.Size = new System.Drawing.Size(150, 20);
+            this.riotApiKeyField.TabIndex = 11;
+            this.riotApiKeyField.Text = "RGAPI-2ede1927-617f-4f75-beb2-c9d19dce54ab";
+            this.riotApiKeyField.TextChanged += new System.EventHandler(this.riotApiKeyField_TextChanged);
             // 
-            // richTextBox1
+            // label10
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(88, 20);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(558, 72);
-            this.richTextBox1.TabIndex = 9;
-            this.richTextBox1.Text = "";
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.label10.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label10.Location = new System.Drawing.Point(591, 410);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(70, 13);
+            this.label10.TabIndex = 12;
+            this.label10.Text = "Riot API Key:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(834, 411);
+            this.ClientSize = new System.Drawing.Size(834, 429);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.riotApiKeyField);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
@@ -462,9 +489,9 @@
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -507,7 +534,9 @@
         private System.Windows.Forms.ToolStripStatusLabel StatusLabel;
         private System.Windows.Forms.ToolStripProgressBar ProgressBar;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox AdviceText;
+        private System.Windows.Forms.TextBox riotApiKeyField;
+        private System.Windows.Forms.Label label10;
     }
 }
 
